@@ -2,7 +2,8 @@
 
 :root {
     --gradient: radial-gradient(ellipse 175rem 50rem at top left, #ffa39b -250%, #1c1e24 100%);
-    --btn-background: #7289da;
+    --btn-background: #5865F2;
+    --btn-background-hover: #5865f2c5;
 }
 
 * {
@@ -49,11 +50,12 @@ main {
 .pfp {
     display: block;
     width: 18rem;
+    height: 18rem;
     margin-bottom: 2rem;
     border-radius: 100%;
 }
 
-a.invite {
+a.button {
     width: 18rem;
 }
 
@@ -63,14 +65,14 @@ a {
     text-decoration: none;
     display: block;
     padding-bottom: 0.125rem;
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
     padding: 0.5rem;
     border-radius: 0.35rem;
     transition: .25s;
 }
 
 a:hover {
-    background: #7289dab4;
+    background: var(--btn-background-hover);
 }
 
 footer {
