@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 
+:root {
+    --gradient: radial-gradient(ellipse 175rem 50rem at top left, #ffa39b -250%, #1c1e24 100%);
+    --btn-background: #7289da;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
     font-family: 'DM Sans', sans-serif;
-    background: radial-gradient(ellipse 175rem 50rem at top left, #ffa39b -250%, #1c1e24 100%);
+    background: #1c1e24;
+    background-image: var(--gradient);
+    background-size: 400%;
     background-attachment: fixed;
+    animation: bg-animation 2s ease;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: right;
+    }
+    100% {
+        background-position: left;
+    }
 }
 
 body {
@@ -20,7 +37,7 @@ body {
 main {
     text-align: center;
     font-size: 1.15rem;
-    height: 75vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
 }
@@ -42,13 +59,18 @@ a.invite {
 
 a {
     color: #fff;
-    background: #7289da;
+    background: var(--btn-background);
     text-decoration: none;
     display: block;
     padding-bottom: 0.125rem;
     margin-bottom: 0.35rem;
     padding: 0.5rem;
     border-radius: 0.35rem;
+    transition: .25s;
+}
+
+a:hover {
+    background: #7289dab4;
 }
 
 footer {
