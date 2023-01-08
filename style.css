@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 :root {
     --gradient: radial-gradient(ellipse 175rem 50rem at top left, #ffa39b -250%, #1c1e24 100%);
@@ -10,7 +10,7 @@
 }
 
 html {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     background: #1c1e24;
     background-image: var(--gradient);
     background-size: 400%;
