@@ -15,15 +15,15 @@ html {
     background-image: var(--gradient);
     background-size: 400%;
     background-attachment: fixed;
-    animation: bg-animation 5s ease;
+    animation: bg-animation 3.2s ease;
 }
 
 @keyframes bg-animation {
     0% {
-        background-position: right;
+        background-position: top right;
     }
     100% {
-        background-position: left;
+        background-position: bottom left;
     }
 }
 
