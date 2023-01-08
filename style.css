@@ -15,7 +15,7 @@ html {
     background-image: var(--gradient);
     background-size: 400%;
     background-attachment: fixed;
-    animation: bg-animation 2s ease;
+    animation: bg-animation 5s ease;
 }
 
 @keyframes bg-animation {
