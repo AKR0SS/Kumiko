@@ -59,7 +59,7 @@ a.button {
     width: 18rem;
 }
 
-a {
+a.button {
     color: #fff;
     background: var(--btn-background);
     text-decoration: none;
@@ -71,7 +71,7 @@ a {
     transition: .25s;
 }
 
-a:hover {
+a.button:hover {
     background: var(--btn-background-hover);
 }
 
@@ -82,4 +82,8 @@ footer {
     height: 2.5rem;
     width: 100%;
     bottom: 0;
+}
+
+a.repo {
+    color: #fff;
 }
